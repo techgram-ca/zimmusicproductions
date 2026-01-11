@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Zim Music Productions - Empowering Voices Through Music, Community & Care
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+    <link href="assets/css/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                <a href="/" class="flex items-center gap-3 cursor-pointer">
+                    <img 
+                    src="assets/images/logo.png" 
+                    alt="Zim Music Productions Logo"
+                    class="h-8 sm:h-10 md:h-12 w-auto object-contain"
+                    />
+                    <span class="font-['Pacifico'] text-xl sm:text-2xl text-primary">
+                        Zim Music Productions
+                    </span>
+                    </a>
+                </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#what-we-do"
+              class="text-gray-700 hover:text-primary transition-colors cursor-pointer"
+              >What We Do</a
+            >
+            <a
+              href="mental-health"
+              class="text-gray-700 hover:text-primary transition-colors cursor-pointer"
+              >Mental Health & Programs</a
+            >
+            <a
+              href="book-an-artist"
+              class="text-gray-700 hover:text-primary transition-colors cursor-pointer"
+              >Book An Artist</a
+            >
+			<a
+              href="gallery"
+              class="text-gray-700 hover:text-primary transition-colors cursor-pointer"
+              >Gallery</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-primary transition-colors cursor-pointer"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="w-8 h-8 flex items-center justify-center text-gray-700 cursor-pointer"
+            >
+              <i class="ri-menu-line ri-lg"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+        <div class="px-4 py-2 space-y-2">
+          <a href="#what-we-do" class="block py-2 text-gray-700 cursor-pointer"
+            >What We Do</a
+          >
+          <a href="mental-health" class="block py-2 text-gray-700 cursor-pointer"
+            >Mental Health & Programs</a
+          >
+          <a href="book-an-artist" class="block py-2 text-gray-700 cursor-pointer"
+            >Book An Artist</a
+          >
+		   <a href="gallery" class="block py-2 text-gray-700 cursor-pointer"
+            >Gallery</a
+          >
+          <a href="#contact" class="block py-2 text-gray-700 cursor-pointer"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background-image: url('assets/images/hero-img.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6">
+                    No One Is Left Behind
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
+                    Empowering voices through music, community, and care — supporting marginalized artists with creative programs, mental health resources, and educational opportunities that create lasting social impact.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#get-involved"> <button class="bg-secondary text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-emerald-600 transition-colors whitespace-nowrap">
+                        Get Involved
+                    </button></a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Who We Are Section -->
+        <section id="about" class="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="mb-6">
+                            <div class="flex bg-orange-100 rounded-lg p-1 mb-6">
+                                <button id="mission-tab" class="flex-1 px-4 py-2 text-sm font-medium text-white bg-primary rounded-md shadow-sm transition-all cursor-pointer">
+                                    Our Mission
+                                </button>
+                                <button id="vision-tab" class="flex-1 px-4 py-2 text-sm font-medium text-orange-600 hover:text-orange-700 transition-all cursor-pointer">
+                                    Our Vision
+                                </button>
+                            </div>
+                            <div id="mission-content" class="content-panel min-h-64">
+                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  Our Mission
+                </h2>
+                                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                    Zim Music Productions, based in Montreal, Canada, is on a mission to provide opportunities for all those who have been overlooked or marginalized. Whether you are an aspiring artist or a skilled individual struggling to find your place, we are dedicated
+                                    to helping you realize and achieve your goals.
+                                </p>
+                                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                                    Through mental health forums, community education, and mentorship programs, we strive to create a supportive environment that nurtures personal and artistic growth.
+                                </p>
+                            </div>
+                            <div id="vision-content" class="content-panel hidden min-h-64">
+                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  Our Vision
+                </h2>
+                                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                    Our vision is to cultivate a vibrant and inclusive community where every individual, regardless of background or circumstances, can access opportunities in the realm of arts and skills. Zim Music Productions envisions a future where forums, concerts,
+                                    festivals, and expos become platforms for diverse voices, contributing to a rich tapestry of cultural expression.
+                                </p>
+                                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                                    By fostering a sense of belonging and breaking away from dependence syndrome, we aim to empower our community towards self-sustainability.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-6 text-center">
+                            <div>
+                                <div class="text-3xl font-bold text-primary mb-2">500+</div>
+                                <div class="text-sm text-gray-600">Artists Supported</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-secondary mb-2">50+</div>
+                                <div class="text-sm text-gray-600">Community Events</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-orange-600 mb-2">15</div>
+                                <div class="text-sm text-gray-600">Partner Organizations</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-96 min-h-96 flex-shrink-0">
+                        <img src="assets/images/mission.jpg" alt="Community of diverse artists" class="absolute inset-0 w-full h-full object-cover object-center rounded-2xl shadow-xl" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- What We Do Section -->
+        <section id="what-we-do" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            What We Do
+          </h2>
+                    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                        Our comprehensive programs address the diverse needs of artists and communities, creating pathways for creative expression, personal growth, and meaningful connection.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Music & Creative Programs -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100 overflow-hidden flex flex-col h-full">
+                        <div class="relative">
+                            <img src="assets/images/creative-programs.jpg" alt="Music & Creative Programs" class="w-full h-48 object-cover object-top" />
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="ri-music-2-line mr-2"></i>Music & Creative
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Music & Creative Programs
+              </h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed flex-grow">
+                                We offer workshops and seminars that inspire creativity, build skills, and support artistic expression within the music community.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <!-- Mental Health Forums -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100 overflow-hidden flex flex-col h-full">
+                        <div class="relative">
+                            <img src="assets/images/mental-health.jpg" alt="Mental Health Forums" class="w-full h-48 object-cover object-top" />
+                            <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="ri-heart-line mr-2"></i>Mental Health
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Mental Health Forums
+              </h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed flex-grow">
+                                At Zim Music Productions, we recognize the importance of prioritizing mental health and have implemented various initiatives to support the mental well-being of artists and creatives
+                            </p>
+                            <a href="mental-health">
+                                <button class="text-primary font-medium text-sm hover:text-orange-600 transition-colors cursor-pointer mt-auto text-left">
+                                    Learn More <i class="ri-arrow-right-line ml-1"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Education & Mentorship -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100 overflow-hidden flex flex-col h-full">
+                        <div class="relative">
+                            <img src="assets/images/education.jpg" alt="Education & Mentorship" class="w-full h-48 object-cover object-top" />
+                            <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="ri-graduation-cap-line mr-2"></i>Education
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Education & Mentorship
+              </h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed flex-grow">
+                                We are committed to providing education and mentorship that support personal and artistic growth while fostering confidence, creativity, and connection within the music community.
+                            </p>
+                            <a href="mental-health">
+                                <button class="text-primary font-medium text-sm hover:text-orange-600 transition-colors cursor-pointer mt-auto text-left">
+                                    Learn More <i class="ri-arrow-right-line ml-1"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Events & Community Engagement -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100 overflow-hidden flex flex-col h-full">
+                        <div class="relative">
+                            <img src="assets/images/events.jpg" alt="Events & Community Engagement" class="w-full h-48 object-cover object-top" />
+                            <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="ri-community-line mr-2"></i>Community
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Events & Community Engagement
+              </h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed flex-grow">
+                                We host inclusive events and community initiatives that bring people together, celebrate creativity, and strengthen meaningful connections.
+                            </p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Get Involved Section -->
+        <section id="get-involved" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        Get Involved
+                    </h2>
+                    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                        Join our mission to empower artists and strengthen communities. There are many ways to make a meaningful impact and be part of our growing movement.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Donate -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 text-center group hover:shadow-xl transition-shadow flex flex-col">
+                        <div class="w-20 h-20 flex items-center justify-center bg-primary/10 rounded-2xl mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
+                            <i class="ri-heart-fill ri-2x text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Donate</h3>
+                        <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow">
+                            Your contribution directly funds artist development, mental health resources, and community programs that change lives.
+                        </p>
+                        <a href="#contact">
+                            <button class="bg-primary text-white px-6 py-3 !rounded-button font-semibold hover:bg-orange-600 transition-colors whitespace-nowrap cursor-pointer">
+                                Donate Now
+                            </button>
+                        </a>
+                    </div>
+                    <!-- Volunteer -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 text-center group hover:shadow-xl transition-shadow flex flex-col">
+                        <div class="w-20 h-20 flex items-center justify-center bg-secondary/10 rounded-2xl mx-auto mb-6 group-hover:bg-secondary/20 transition-colors">
+                            <i class="ri-hand-heart-line ri-2x text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Volunteer</h3>
+                        <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow">
+                            Share your skills and passion by volunteering at events, workshops, or providing mentorship to emerging artists in our community.
+                        </p>
+                        <a href="#contact">
+                            <button class="bg-secondary text-white px-6 py-3 !rounded-button font-semibold hover:bg-emerald-600 transition-colors whitespace-nowrap cursor-pointer">
+                                Join Our Team
+                            </button>
+                        </a>
+                    </div>
+                    <!-- Partner -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 text-center group hover:shadow-xl transition-shadow flex flex-col">
+                        <div class="w-20 h-20 flex items-center justify-center bg-blue-100 rounded-2xl mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
+                            <i class="ri-handshake-line ri-2x text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Partner</h3>
+                        <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow">
+                            Organizations and businesses can partner with us to sponsor programs, provide venues, or create opportunities for our artists.
+                        </p>
+                        <a href="#contact">
+                            <button class="bg-blue-600 text-white px-6 py-3 !rounded-button font-semibold hover:blue-700 transition-colors whitespace-nowrap cursor-pointer">
+                                Become a Partner
+                            </button>
+                        </a>
+                    </div>
+                    <!-- Attend Events -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 text-center group hover:shadow-xl transition-shadow flex flex-col">
+                        <div class="w-20 h-20 flex items-center justify-center bg-purple-100 rounded-2xl mx-auto mb-6 group-hover:bg-purple-200 transition-colors">
+                            <i class="ri-calendar-event-line ri-2x text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                            Attend Events
+                        </h3>
+                        <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow">
+                            Experience incredible performances, support our artists, and connect with like-minded community members at our regular showcases and events.
+                        </p>
+                        <a href="#contact">
+                            <button class="bg-purple-600 text-white px-6 py-3 !rounded-button font-semibold hover:bg-purple-700 transition-colors whitespace-nowrap cursor-pointer">
+                                Event Enquiries
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Trust Builders Section -->
+        <!-- Trust Builders Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+        Trusted by Leading Organizations
+      </h3>
+                    <p class="text-gray-600">
+                        Proud partners in building stronger, more inclusive communities through music
+                    </p>
+                </div>
+
+                <!-- Scroll container -->
+                <div class="relative overflow-x-auto overflow-y-hidden scroll-smooth touch-pan-x">
+                    <!-- Edge fade (left) -->
+                    <div class="pointer-events-none absolute left-0 top-0 h-full w-8 bg-gradient-to-r from-gray-50 to-transparent"></div>
+
+                    <!-- Edge fade (right) -->
+                    <div class="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-gray-50 to-transparent"></div>
+
+                    <!-- Content -->
+                    <div class="flex items-center gap-12 px-8 pb-4" style="width: max-content;">
+                        <img src="assets/images/sponsers/sponser-1.png" alt="Foundation For Black Communities" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-2.png" alt="Mental Health Healing" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-3.png" alt="Zim Music Productions" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-4.png" alt="514 Online Mix" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-5.jpg" alt="Cameroon's Jewels" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-6.jpg" alt="Teal Heal" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-7.jpg" alt="KK&David Consulting" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-8.jpg" alt="Bistro Nolah" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-9.jpg" alt="QBBE" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-10.jpg" alt="Groupe 33" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-11.png" alt="Youth in Motion" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-12.png" alt="LMRC" class="w-48 h-48 object-contain flex-shrink-0" />
+                        <img src="assets/images/sponsers/sponser-13.png" alt="IDEES AFRIQUE" class="w-48 h-48 object-contain flex-shrink-0" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Contact Us
+          </h2>
+                    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                        Ready to join our community or have questions about our programs? We'd love to hear from you and help you get started on your journey.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div class="grid lg:grid-cols-3 gap-0">
+                        <!-- Contact Form -->
+                        <div class="lg:col-span-2 p-8 md:p-12">
+                            <form id="contact-form" action="https://formsubmit.co/8ad08040ee6ff09cbd86420875b63def" method="POST" class="space-y-6">
+                                <input type="hidden" name="_subject" value="New Website Enquiry">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_next" value="https://techgram-ca.github.io/zim-dev/#success">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                        <input type="text" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                        <input type="text" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                    <input type="email" name="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">I'm interested in</label>
+                                    <div class="relative">
+                                        <select name="interest" required class="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm appearance-none bg-white">
+                                            <option value="">Please select...</option>
+                                            <option value="Donation and Artist development">
+                                                Donation and Artist development
+                                            </option>
+                                            <option value="Mental Health Support">
+                                                Mental Health Support
+                                            </option>
+                                            <option value="Volunteering">
+                                                Volunteering Opportunities
+                                            </option>
+                                            <option value="Partnership">
+                                                Partnership & Sponsorship
+                                            </option>
+                                            <option value="Events">Upcoming Events</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <i class="ri-arrow-down-s-line absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                    <textarea name="message" rows="5" maxlength="500" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm resize-vertical" placeholder="Tell us more about how we can help you or how you'd like to get involved..."></textarea>
+                                    <div class="text-right text-xs text-gray-500 mt-1">
+                                        <span id="char-count">0</span>/500 characters
+                                    </div>
+                                </div>
+                                <div class="text-left">
+                                    <button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button text-lg font-semibold hover:bg-orange-600 transition-colors whitespace-nowrap cursor-pointer">
+                                        Send Message
+                                    </button>
+                                </div>
+                                <div id="success" class="hidden target:block mt-6 rounded-lg border border-green-200 bg-green-50 p-4 text-green-700">
+                                    <h3 class="font-semibold">Message sent successfully</h3>
+                                    <p class="text-sm">Thank you for reaching out. We’ll get back to you soon.</p>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Contact Information -->
+                        <div class="bg-primary p-8 md:p-12 text-white">
+                            <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+                            <div class="space-y-6 mb-8">
+                                <div class="flex items-start">
+                                    <i class="ri-mail-line text-xl mr-4 mt-1 text-orange-100"></i>
+                                    <div>
+                                        <div class="font-medium">Email us</div>
+                                        <div class="text-orange-100">
+                                            <a href="mailto:zimmpro@hotmail.com">zimmpro@hotmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="ri-phone-line text-xl mr-4 mt-1 text-orange-100"></i>
+                                    <div>
+                                        <div class="font-medium">Call us</div>
+                                        <div class="text-orange-100"><a href="tel:+15148829959">+1(514)-882-9959</a></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="ri-map-pin-line text-xl mr-4 mt-1 text-orange-100"></i>
+                                    <div>
+                                        <div class="font-medium">Visit us</div>
+                                        <div class="text-orange-100">
+                                            Montreal, Quebec,
+                                            <br />Canada
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="ri-time-line text-xl mr-4 mt-1 text-orange-100"></i>
+                                    <div>
+                                        <div class="font-medium">Office Hours</div>
+                                        <div class="text-orange-100">
+                                            Mon-Fri: 9am-6pm
+                                            <br />Sat: 10am-4pm
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-orange-400 pt-6">
+                                <h4 class="font-semibold mb-3">Response Times</h4>
+                                <div class="space-y-2 text-sm text-orange-100">
+                                    <div class="flex justify-between">
+                                        <span>General Inquiries:</span>
+                                        <span>24-48 hours</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Artist Applications:</span>
+                                        <span>3-5 business days</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Partnership Requests:</span>
+                                        <span>1-2 weeks</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Urgent Matters:</span>
+                                        <span>Same day</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="bg-gray-900 text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-4 gap-8 mb-12">
+                    <div class="md:col-span-2">
+                        <div class="font-['Pacifico'] text-2xl text-primary mb-4">
+                            Zim Music Productions
+                        </div>
+                        <p class="text-gray-300 mb-6 leading-relaxed max-w-md">
+                            Empowering marginalized artists and communities through music, education, and mental health support. Every voice matters, every story deserves to be heard.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/zimmusicproductions" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/zimmusicproductions" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@zim.music.product" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+                                <i class="ri-tiktok-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@zimusicproductions" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+                                <i class="ri-youtube-line"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@mentalhealthmatters00" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+                                <i class="ri-youtube-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#what-we-do" class="text-gray-300 hover:text-white transition-colors cursor-pointer">What We DO</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mental-health"
+                  class="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  >Mental Health and Programs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#get-involved"
+                  class="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  >Get Involved</a
+                >
+              </li>
+              <li>
+                <a
+                  href="book-an-artist"
+                  class="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  >Book An Artist</a
+                >
+              </li>
+			  <li>
+                <a
+                  href="gallery"
+                  class="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  >Gallery</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <i class="ri-mail-line mr-3 text-primary"></i>
+                <span class="text-gray-300"><a href="mailto:zimmpro@hotmail.com">zimmpro@hotmail.com</a></span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="ri-phone-line mr-3 text-primary"></i>
+                        <span class="text-gray-300"><a href="tel:+15148829959">+1(514)-882-9959</a></span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="ri-map-pin-line mr-3 text-primary mt-1"></i>
+                        <span class="text-gray-300">Montreal, Quebec,
+					<br />Canada
+                  </span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2026 Zim Music Productions. All rights reserved.
+            </p>
+			<p class="text-gray-400 text-sm mb-4 md:mb-0">
+              Designed and maintained by  <a
+                  href="https://techgram.ca" target="_blank"
+                  class="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  >Techgram</a
+                >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="mobile-menu-toggle">
+		document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
+      });
+    </script>
+	<script id="smooth-scrolling">
+     document.addEventListener("DOMContentLoaded", function () {
+		  const links = document.querySelectorAll('a[href^="#"]');
+
+		  links.forEach((link) => {
+			link.addEventListener("click", function (e) {
+			  const targetId = this.getAttribute("href").substring(1);
+			  const targetElement = document.getElementById(targetId);
+
+			  if (!targetElement) return;
+
+			  e.preventDefault();
+			  location.hash = targetId;
+
+			  targetElement.scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+			  });
+
+			  history.replaceState(null, "", location.pathname);
+			});
+		  });
+		});
+    </script>
+<script id="mission-vision-toggle">
+  document.addEventListener("DOMContentLoaded", function () {
+    const missionTab = document.getElementById("mission-tab");
+    const visionTab = document.getElementById("vision-tab");
+    const missionContent = document.getElementById("mission-content");
+    const visionContent = document.getElementById("vision-content");
+    
+    missionTab.addEventListener("click", function () {
+      missionTab.classList.add(
+        "bg-primary",  // Back to bg-primary (works with our CSS now)
+        "text-white",
+        "shadow-sm",
+        "rounded-md",
+      );
+      missionTab.classList.remove("text-orange-600", "hover:text-orange-700");
+      visionTab.classList.remove(
+        "bg-primary",  // Back to bg-primary
+        "text-white",
+        "shadow-sm",
+        "rounded-md",
+      );
+      visionTab.classList.add("text-orange-600", "hover:text-orange-700");
+      missionContent.classList.remove("hidden");
+      visionContent.classList.add("hidden");
+    });
+    
+    visionTab.addEventListener("click", function () {
+      visionTab.classList.add(
+        "bg-primary",  // Back to bg-primary
+        "text-white",
+        "shadow-sm",
+        "rounded-md",
+      );
+      visionTab.classList.remove("text-orange-600", "hover:text-orange-700");
+      missionTab.classList.remove(
+        "bg-primary",  // Back to bg-primary
+        "text-white",
+        "shadow-sm",
+        "rounded-md",
+      );
+      missionTab.classList.add("text-orange-600", "hover:text-orange-700");
+      visionContent.classList.remove("hidden");
+      missionContent.classList.add("hidden");
+    });
+  });
+</script>
+  </body>
+</html>

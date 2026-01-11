@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health & Wellbeing - Zim Music Productions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <link href="../assets/css/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                <a href="../" class="flex items-center gap-3 cursor-pointer">
+                    <img 
+                    src="images/logo.png" 
+                    alt="Zim Music Productions Logo"
+                    class="h-8 sm:h-10 md:h-12 w-auto object-contain"
+                    />
+                    <span class="font-['Pacifico'] text-xl sm:text-2xl text-primary">
+                        Zim Music Productions
+                    </span>
+                    </a>
+                </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="../#what-we-do"
+              class="text-gray-700 hover:text-primary transition-colors cursor-pointer"
+              >What We Do</a
+            >
+            <a
+              href="../mental-health"
+              class="text-gray-700 hover:text-primary transition-colors cursor-pointer"
+              >Mental Health & Programs</a
+            >
+            <a
+              href="../book-an-artist"
+              class="text-gray-700 hover:text-primary transition-colors cursor-pointer"
+              >Book An Artist</a
+            >
+			<a
+              href="../gallery"
+              class="text-gray-700 hover:text-primary transition-colors cursor-pointer"
+              >Gallery</a
+            >
+            <a
+              href="../#contact"
+              class="text-gray-700 hover:text-primary transition-colors cursor-pointer"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="w-8 h-8 flex items-center justify-center text-gray-700 cursor-pointer"
+            >
+              <i class="ri-menu-line ri-lg"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+        <div class="px-4 py-2 space-y-2">
+          <a href="../#what-we-do" class="block py-2 text-gray-700 cursor-pointer"
+            >What We Do</a
+          >
+          <a href="../mental-health" class="block py-2 text-gray-700 cursor-pointer"
+            >Mental Health & Programs</a
+          >
+          <a href="../book-an-artist" class="block py-2 text-gray-700 cursor-pointer"
+            >Book An Artist</a
+          >
+		   <a href="../gallery" class="block py-2 text-gray-700 cursor-pointer"
+            >Gallery</a
+          >
+          <a href="../#contact" class="block py-2 text-gray-700 cursor-pointer"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background-image: url('images/hero.jpg'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-r from-teal-900/60 to-emerald-900/40"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+<div class="text-center text-white">
+<h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+Mental Health &<br>
+<span class="text-emerald-300">Wellbeing Support</span>
+</h1>
+<p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-100">
+Comprehensive mental health services designed for artists and creatives. Find support, build resilience, and thrive in a safe, understanding community.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<button class="bg-secondary text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-emerald-600 transition-colors whitespace-nowrap cursor-pointer">
+<a href="#contact">Get Support Now</a>
+                    </button>
+                    <button class="bg-primary text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-orange-600 transition-colors whitespace-nowrap cursor-pointer">
+                        <a href="tel:988">Crisis Support</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Crisis Support Banner -->
+        <section class="bg-red-50 border-l-4 border-red-400 py-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 flex items-center justify-center text-red-600 mr-4">
+                            <i class="ri-alert-line ri-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-red-800 font-medium">Crisis Support Available 24/7</p>
+                            <p class="text-red-700 text-sm">If you're in immediate danger, call 911. For mental health crisis support: <span class="font-semibold">988</span></p>
+                        </div>
+                    </div>
+                    <button class="bg-red-600 text-white px-6 py-2 !rounded-button font-semibold hover:bg-red-700 transition-colors whitespace-nowrap cursor-pointer">
+                        <a href="tel:988">Get Help Now</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Services Overview -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+Our Mental Health Services
+</h2>
+                    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                        Comprehensive support designed specifically for artists and creatives, addressing the unique challenges of the creative journey while promoting overall wellbeing.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Emotional Expression -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100 overflow-hidden">
+                        <div class="relative">
+                            <img src="images/expression.jpg" alt="Emotional Expression" class="w-full h-48 object-cover object-top">
+                            <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="ri-palette-line mr-2"></i>Expression
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Emotional Expression</h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Creative outlets and safe spaces for emotional expression through art therapy, music therapy, and guided creative sessions that help process feelings and experiences.
+                            </p>
+                            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                                <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Art & Music Therapy</li>
+                                <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Creative Writing Workshops</li>
+                                <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Movement & Dance Therapy</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Stress Reduction -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100 overflow-hidden">
+                        <div class="relative">
+                            <img src="images/stress-reduction.jpg" alt="Stress Reduction" class="w-full h-48 object-cover object-top">
+                            <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="ri-leaf-line mr-2"></i>Wellness
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Stress Reduction</h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Evidence-based techniques and workshops for managing stress, anxiety, and creative blocks. Learn practical tools for maintaining mental wellness in high-pressure environments.
+                            </p>
+                            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                                <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Mindfulness & Meditation</li>
+                                <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Breathing Techniques</li>
+                                <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Stress Management Workshops</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mood Enhancement -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100 overflow-hidden">
+                        <div class="relative">
+                            <img src="images/mood-enhancement.jpg" alt="Mood Enhancement" class="w-full h-48 object-cover object-top">
+                            <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="ri-sun-line mr-2"></i>Positivity
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Mood Enhancement</h3>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Programs and activities designed to improve overall mental wellbeing, build resilience, and cultivate positive mental health habits for long-term emotional stability.
+                            </p>
+                            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                                <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Positive Psychology Workshops</li>
+                                <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Gratitude & Journaling</li>
+                                <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Social Connection Activities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Mentorship Programs -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+Education & Mentorship
+</h2>
+                    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                        Comprehensive mental health education and personalized mentorship to build resilience, develop coping strategies, and maintain long-term wellness.
+                    </p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Mental Health Workshops</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-xl mr-4 flex-shrink-0">
+                                    <i class="ri-brain-line ri-lg text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Anxiety Management</h4>
+                                    <p class="text-gray-600 text-sm">Learn evidence-based techniques for managing performance anxiety, social anxiety, and creative blocks that commonly affect artists.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-purple-100 rounded-xl mr-4 flex-shrink-0">
+                                    <i class="ri-heart-pulse-line ri-lg text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Depression Support</h4>
+                                    <p class="text-gray-600 text-sm">Understanding depression in creative fields, building support systems, and developing healthy coping mechanisms for emotional wellness.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-xl mr-4 flex-shrink-0">
+                                    <i class="ri-shield-check-line ri-lg text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Resilience Building</h4>
+                                    <p class="text-gray-600 text-sm">Develop emotional resilience, stress tolerance, and adaptive coping strategies for navigating the challenges of creative careers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-96">
+                        <img src="images/mentor.jpg" alt="Mental Health Workshop" class="absolute inset-0 w-full h-full object-cover object-center rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Professional Staff & Credentials -->
+        <!-- <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+Our Mental Health Team
+</h2>
+                    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                        Meet our qualified mental health professionals, counselors, and trained peer supporters who are dedicated to your wellbeing and recovery.
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-full md:w-1/3">
+                        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                            <div class="relative">
+                                <img src="images/team-1.jpg" alt="Michael Rivera" class="w-full h-64 object-cover object-top" />
+                            </div>
+
+                            <div class="p-6 text-center">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+          Michael Rivera, ATR-BC
+        </h3>
+
+                                <div class="text-primary font-medium mb-3">
+                                    Art Therapist
+                                </div>
+
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Board-certified art therapist helping artists process emotions and trauma through creative expression, with expertise in music and visual arts therapy.
+                                </p>
+
+                                <div class="space-y-2 text-xs text-gray-600 text-left">
+                                    <div class="flex items-center">
+                                        <i class="ri-award-line text-secondary mr-2"></i> Art Therapy Registered & Board Certified
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="ri-graduation-cap-line text-secondary mr-2"></i> MA in Art Therapy
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="ri-star-line text-secondary mr-2"></i> Music Therapy Certified
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+<!-- Contact & Support Access -->
+<section id="contact" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Get Mental Health Support
+            </h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                Multiple ways to access support and begin your wellness journey. We're here for you every step of the way.
+            </p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div class="flex flex-col md:flex-row">
+                <!-- Contact Form (60%) -->
+                <div class="md:w-3/5 p-8 md:p-12">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Request Support</h3>
+                    <form id="mental-health-form" action="https://formsubmit.co/8ad08040ee6ff09cbd86420875b63def" method="POST" class="space-y-6">
+                        <input type="hidden" name="_subject" value="New Mental Health Support Request">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://techgram-ca.github.io/zim-dev/mental-health/#success">
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent text-sm">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" name="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone (Optional)</label>
+                                <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent text-sm">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Type of Support Needed</label>
+                                <div class="relative">
+                                    <select name="supportType" required class="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent text-sm appearance-none bg-white">
+                                        <option value="">Please select...</option>
+                                        <option value="crisis">Crisis Support (Immediate)</option>
+                                        <option value="counseling">Individual Counseling</option>
+                                        <option value="group">Group Therapy</option>
+                                        <option value="art-therapy">Art/Music Therapy</option>
+                                        <option value="peer-support">Peer Support</option>
+                                        <option value="workshops">Wellness Workshops</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <i class="ri-arrow-down-s-line absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Contact Method</label>
+                                <div class="flex items-center space-x-4 h-12">
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="contactMethod" value="email" class="sr-only">
+                                        <div class="contact-radio w-4 h-4 border-2 border-gray-300 rounded-full mr-2"></div>
+                                        <span class="text-sm text-gray-700">Email</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="contactMethod" value="phone" class="sr-only">
+                                        <div class="contact-radio w-4 h-4 border-2 border-gray-300 rounded-full mr-2"></div>
+                                        <span class="text-sm text-gray-700">Phone</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">How can we help? (Optional)</label>
+                            <textarea name="message" rows="4" maxlength="500" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent text-sm resize-vertical" placeholder="Share any specific concerns or questions..."></textarea>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <div class="flex items-start">
+                                <i class="ri-information-line text-blue-600 mr-2 mt-0.5"></i>
+                                <div class="text-sm text-blue-800">
+                                    <strong>Confidentiality:</strong> All information shared is confidential and will only be used to connect you with appropriate support services.
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-secondary text-white px-8 py-3 !rounded-button text-lg font-semibold hover:bg-emerald-600 transition-colors whitespace-nowrap cursor-pointer">
+                            Request Support
+                        </button>
+                        <div id="success" class="hidden target:block mt-6 rounded-lg border border-green-200 bg-green-50 p-4 text-green-700">
+                            <h3 class="font-semibold">Request sent successfully</h3>
+                            <p class="text-sm">Thank you for reaching out. We'll get back to you soon.</p>
+                        </div>
+                    </form>
+                </div>
+                <!-- Support Information (40%) -->
+                <div class="md:w-2/5 bg-secondary p-8 md:p-12 text-white">
+                    <h3 class="text-2xl font-semibold mb-6">Immediate Support Options</h3>
+                    <div class="space-y-6 mb-8">
+                        <div class="bg-white/10 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="ri-alarm-warning-line text-xl mr-3 text-red-300"></i>
+                                <div class="font-semibold text-red-100">Crisis Support - Available 24/7</div>
+                            </div>
+                            <div class="text-emerald-100 text-sm">
+                                <div>National Suicide Prevention: <strong><a href="tel:988">988</a></strong></div>
+                                <div>Crisis Text Line: <strong>Text HOME to 741741</strong></div>
+                                <div>Emergency Services: <strong><a href="tel:911">911</a></strong></div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ri-mail-line text-xl mr-4 mt-1 text-emerald-100"></i>
+                            <div>
+                                <div class="font-medium">Mental Health Support</div>
+                                <div class="text-emerald-100"><a href="mailto:lmabhunu@yahoo.com">lmabhunu@yahoo.com</a></div>
+                                <div class="text-sm text-emerald-200">Response within 24 hours</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-emerald-400 pt-6">
+                        <h4 class="font-semibold mb-3">Response Times</h4>
+                        <div class="space-y-2 text-sm text-emerald-100">
+                            <div class="flex justify-between">
+                                <span>Crisis Situations:</span>
+                                <span>Immediate</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Urgent Support:</span>
+                                <span>Same day</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>General Inquiries:</span>
+                                <span>24-48 hours</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Appointment Requests:</span>
+                                <span>2-3 business days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Footer -->
+        <footer id="footer" class="bg-gray-900 text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-4 gap-8 mb-12">
+                    <div class="md:col-span-2">
+                        <div class="font-['Pacifico'] text-2xl text-primary mb-4">
+                            Zim Music Productions
+                        </div>
+                        <p class="text-gray-300 mb-6 leading-relaxed max-w-md">
+                            Empowering marginalized artists and communities through music, education, and mental health support. Every voice matters, every story deserves to be heard.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/zimmusicproductions" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/zimmusicproductions" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@zim.music.product" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+                                <i class="ri-tiktok-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@zimusicproductions" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+                                <i class="ri-youtube-line"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@mentalhealthmatters00" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+                                <i class="ri-youtube-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="../#what-we-do" class="text-gray-300 hover:text-white transition-colors cursor-pointer">What We DO</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../mental-health"
+                  class="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  >Mental Health and Programs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../#get-involved"
+                  class="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  >Get Involved</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../book-an-artist"
+                  class="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  >Book An Artist</a
+                >
+              </li>
+			  <li>
+                <a
+                  href="../gallery"
+                  class="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  >Gallery</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <i class="ri-mail-line mr-3 text-primary"></i>
+                <span class="text-gray-300"><a href="mailto:zimmpro@hotmail.com">zimmpro@hotmail.com</a></span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="ri-phone-line mr-3 text-primary"></i>
+                        <span class="text-gray-300"><a href="tel:+15148829959">+1(514)-882-9959</a></span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="ri-map-pin-line mr-3 text-primary mt-1"></i>
+                        <span class="text-gray-300">Montreal, Quebec,
+					<br />Canada
+                  </span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2026 Zim Music Productions. All rights reserved.
+            </p>
+			<p class="text-gray-400 text-sm mb-4 md:mb-0">
+              Designed and maintained by  <a
+                  href="https://techgram.ca" target="_blank"
+                  class="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  >Techgram</a
+                >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<script id="mobile-menu-toggle">
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  mobileMenuButton.addEventListener("click", function () {
+    mobileMenu.classList.toggle("hidden");
+  });
+});
+</script>
+
+<script id="smooth-scrolling">
+     document.addEventListener("DOMContentLoaded", function () {
+		  const links = document.querySelectorAll('a[href^="#"]');
+
+		  links.forEach((link) => {
+			link.addEventListener("click", function (e) {
+			  const targetId = this.getAttribute("href").substring(1);
+			  const targetElement = document.getElementById(targetId);
+
+			  if (!targetElement) return;
+
+			  e.preventDefault();
+			  location.hash = targetId;
+
+			  targetElement.scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+			  });
+
+			  history.replaceState(null, "", location.pathname);
+			});
+		  });
+		});
+    </script>
+
+<script id="custom-radio-buttons">
+document.addEventListener("DOMContentLoaded", function () {
+  const radioContainers = document.querySelectorAll(
+    "label:has(.contact-radio)",
+  );
+  radioContainers.forEach((container) => {
+    const radio = container.querySelector('input[type="radio"]');
+    const visual = container.querySelector(".contact-radio");
+    container.addEventListener("click", function () {
+      document.querySelectorAll(`input[name="${radio.name}"]`).forEach((r) => {
+        const v = r.parentElement.querySelector(".contact-radio");
+        v.classList.remove("bg-secondary", "border-secondary");
+        v.classList.add("border-gray-300");
+      });
+      radio.checked = true;
+      visual.classList.remove("border-gray-300");
+      visual.classList.add("bg-secondary", "border-secondary");
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/* Custom color definitions */
+@layer utilities {
+  .bg-primary {
+    background-color: #d97706;
+  }
+  
+  .text-primary {
+    color: #d97706;
+  }
+  
+  .border-primary {
+    border-color: #d97706;
+  }
+  
+  .hover\:bg-primary:hover {
+    background-color: #d97706;
+  }
+  
+  .hover\:text-primary:hover {
+    color: #d97706;
+  }
+  
+  .hover\:border-primary:hover {
+    border-color: #d97706;
+  }
+  
+  .bg-secondary {
+    background-color: #059669;
+  }
+  
+  .text-secondary {
+    color: #059669;
+  }
+  
+  .hover\:bg-secondary:hover {
+    background-color: #059669;
+  }
+  
+  .focus\:ring-primary:focus {
+    --tw-ring-color: #d97706;
+  }
+  
+  .focus\:ring-secondary:focus {
+    --tw-ring-color: #059669;
+  }
+  
+  .from-primary {
+    --tw-gradient-from: #d97706 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(217 119 6 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  
+  .from-primary\/5 {
+    --tw-gradient-from: rgb(217 119 6 / 0.05) var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(217 119 6 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  
+  .from-primary\/10 {
+    --tw-gradient-from: rgb(217 119 6 / 0.1) var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(217 119 6 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  
+  .to-primary {
+    --tw-gradient-to: #d97706 var(--tw-gradient-to-position);
+  }
+  
+  .bg-primary\/10 {
+    background-color: rgb(217 119 6 / 0.1);
+  }
+  
+  .bg-primary\/20 {
+    background-color: rgb(217 119 6 / 0.2);
+  }
+  
+  .bg-secondary\/10 {
+    background-color: rgb(5 150 105 / 0.1);
+  }
+  
+  .from-secondary {
+    --tw-gradient-from: #059669 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(5 150 105 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  
+  .to-secondary {
+    --tw-gradient-to: #059669 var(--tw-gradient-to-position);
+  }
+}
+
+/* Custom border radius for buttons */
+.rounded-button {
+  border-radius: 8px !important;
+}
+
+/* Support for !rounded-button (with ! prefix) */
+.\!rounded-button {
+  border-radius: 8px !important;
+}
+
+/* Gallery loading animation */
+.image-loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Lightbox backdrop */
+.lightbox {
+  backdrop-filter: blur(8px);
+}
+
+/* Custom font setup */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* RemixIcon setup */
+:where([class^="ri-"])::before {
+  content: "\f3c2";
+}
